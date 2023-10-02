@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+</head>
+<body>
+  <input type="file" id="csvFile" accept=".csv" onchange="handleFile(this)">
+  <br>
+  <script>
+    function handleFile(fileInput) {
+      var file = fileInput.files[0];
+      var reader = new FileReader();
+      
+      reader.onload = function(e) {
+        var data = btoa(e.target.result);
+        google.script.run.import_data(data);
+      };
+      
+      reader.readAsBinaryString(file);
+    }
+    
+    function importCSV() {
+      var selected = [];
+      var selectElement = document.getElementById("columnSelect");
+      for (var i = 0; i < selectElement.options.length; i++) {
+        if (selectElement.options[i].selected) {
+          selected.push(selectElement.options[i].value);
+        }
+      }
+      google.script.run.import_data(selected);
+    }
+  </script>
+</body>
+</html>
