@@ -52,7 +52,7 @@ We have a checklist at the bottom of this README file, which you should update a
 - [✔] I have recorded a video showing it working and embedded it in the README ▶️ [Video](https://drive.google.com/file/d/1FdXOKW0rTZzO4q5R2EHiiNPVqan7LLkU/view?usp=sharing)
 - [✔] I have tested all the normal working cases 😎
 - [✔] I have even solved some edge cases 💪 (works for 15MB files)
-- [ ] I added my very planned-out approach to the problem at the end of this README 📜 (TBD)
+- [ ✔] I added my very planned-out approach to the problem at the end of this README 📜
 
 ## Got Questions❓
 Feel free to check the discussions tab, you might get something of help there. Check out that tab before reaching out to us. Also, did you know, the internet is a great place to explore 😛
